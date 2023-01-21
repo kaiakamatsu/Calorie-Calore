@@ -3,7 +3,11 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import LandingScreen from '../screens/LandingScreen';
 import LogInScreen from '../screens/LogInScreen';
 import SignUpScreen from '../screens/SignUpScreen';
-
+import HomeScreen from '../screens/HomeScreen';
+import SettingsScreen from './SettingsScreen';
+import HealthyScreen from './HealthScreen';
+import CalcScreen from './CalcScreen';
+import CameraScreen from './CameraScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -24,6 +28,31 @@ export default function MyStack() {
         <Stack.Screen 
           name="Signup"
           component={SignUpScreen} 
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen 
+          name="Home"
+          component={HomeScreen} 
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen 
+          name="Settings"
+          component={SettingsScreen} 
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen 
+          name="Health"
+          component={HealthyScreen} 
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen 
+          name="Calc"
+          component={CalcScreen} 
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen 
+          name="Camera"
+          component={CameraScreen} 
           options={{ headerShown: false }}
         />
       </Stack.Navigator>

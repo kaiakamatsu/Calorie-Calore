@@ -2,12 +2,15 @@ import React from 'react';
 import {StyleSheet, Text, TextInput, SafeAreaView, Alert, Image, TouchableOpacity} from 'react-native';
 import {colors} from '../components/colors';
 import { useNavigation } from '@react-navigation/native';
-
+import {LogoVert} from '../components/LogoVert'
+import {auth} from '../backend/firebase';
+import {signOut, onAuthStateChanged, signInWithEmailAndPassword} from 'firebase/auth';
 
 export default function LandingScreen() {
-
+  signOut(auth);
       return (
         <SafeAreaView style = {styles.background}>
+            <LogoVert style={styles.logo}/>
             <SignUpButton/>
             <LogInButton/>
         </SafeAreaView>
@@ -51,9 +54,9 @@ const styles = StyleSheet.create({
   },
   logo: {
       width: 200, 
-      height: 220,
+      height: 300,
       position: 'absolute',
-      bottom: 450,
+      bottom: 430,
     },
   login:{
     padding: 20,
@@ -62,7 +65,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     borderWidth: 2,
     borderColor: colors['color-red'],
-    bottom: 10,
+    top: 70,
   },
   signup:{
     padding: 20,
@@ -71,7 +74,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     borderWidth: 2,
     borderColor: colors['color-red'],
-    top: 150,
+    top: 230,
   },
   logintext:{
     color: colors['color-text'],

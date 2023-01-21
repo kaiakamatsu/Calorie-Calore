@@ -4,6 +4,7 @@ import {colors} from '../components/colors';
 import {BackButton} from '../components/BackButton';
 import {auth} from '../backend/firebase';
 import {createUserWithEmailAndPassword, signOut} from 'firebase/auth';
+import {Logo} from '../components/Logo'
 
 export default function SignUpScreen() {
 
@@ -27,7 +28,7 @@ export default function SignUpScreen() {
         <TouchableWithoutFeedback onPress = {Keyboard.dismiss} accessible = {false}>
           <SafeAreaView style = {styles.background}>
             <KeyboardAvoidingView style = {{flex: 1}} behavior = "position">
-              
+              <Logo style={styles.logo}/>
               <TextInput style={styles.email}
               autoCorrect = {false}
               clearTextOnFocus = {true}
@@ -81,7 +82,8 @@ const styles = StyleSheet.create({
       paddingVertical: 0,
       top: 400, 
       fontSize: 20,
-      color: "black",
+      color: colors['color-text'],
+      borderColor: colors['color-text'],
     },
   password: {
       height: 50,
@@ -93,18 +95,20 @@ const styles = StyleSheet.create({
       paddingVertical: 0,
       top: 375,
       fontSize: 20,
-      color: "black",
+      color: colors['color-text'],
+      borderColor: colors['color-text'],
     },
   logo: {
-      width: 200, 
+      width: 350, 
       height: 220,
-      left: 15,
+      left: -50,
       position: 'absolute',
-      top: 200,
+      top: 150,
     },
   backbutton:{
     padding: 20,
     backgroundColor: "white",
+    borderColor: colors['color-red'],
     borderRadius: 50,
     borderWidth: 2,
     width: 85,
@@ -113,15 +117,16 @@ const styles = StyleSheet.create({
   },
   backtext:{
       fontStyle: "italic",
-
+      color: colors['color-text'],
   },
   signuptext:{
       fontStyle: "italic",
-
+      color: colors['color-text'],
   },
   signupbutton:{
     padding: 20,
     backgroundColor: "white",
+    borderColor: colors['color-red'],
     borderRadius: 50,
     borderWidth: 2,
     width: 100,

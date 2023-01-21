@@ -4,6 +4,7 @@ import {colors} from '../components/colors';
 import {BackButton} from '../components/BackButton';
 import {auth} from '../backend/firebase';
 import {signOut, onAuthStateChanged, signInWithEmailAndPassword} from 'firebase/auth';
+import {Logo} from '../components/Logo'
 
 export default function LogInScreen({navigation}) {
 
@@ -39,7 +40,7 @@ export default function LogInScreen({navigation}) {
         <TouchableWithoutFeedback onPress = {Keyboard.dismiss} accessible = {false}>
           <SafeAreaView style = {styles.background}>
             <KeyboardAvoidingView style = {{flex: 1}} behavior = "position">
-
+              <Logo style={styles.logo}/>
               <TextInput style={styles.email}
               autoCorrect = {false}
               clearTextOnFocus = {true}
@@ -113,11 +114,11 @@ const styles = StyleSheet.create({
       color: colors['color-text'],
     },
   logo: {
-      width: 200, 
+      width: 350, 
       height: 220,
-      left: 15,
+      left: -50,
       position: 'absolute',
-      top: 200,
+      top: 150,
     },
   backbutton:{
     padding: 20,
