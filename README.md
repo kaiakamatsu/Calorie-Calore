@@ -1,7 +1,7 @@
-# Calorie-Calor
+# Calorie-Calore
 
 Our diet affects out physical, mental, and emotional well-being.
-Calorie Calor helps users plan their meals, understand how much they need to eat, and learn about how different health conditions call for a slightly altered diet. 
+Calorie Calore helps users plan their meals, understand how much they need to eat, and learn about how different health conditions call for a slightly altered diet. 
 
 ![Blank 8 Grids Collage](https://user-images.githubusercontent.com/108591793/213902608-9667ee70-0b37-4f4a-9e91-fd75ae8d4958.png)
 
