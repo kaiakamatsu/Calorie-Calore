@@ -8,15 +8,13 @@ Calorie Calor helps users plan their meals, understand how much they need to eat
 This ios app is created with JavaScript (React Native) and connected to FireBase. Enviornment on Node.js and ran using expo go.
 
 Dependencies:
+
 date format: https://date-fns.org/
 
 calendar component: https://www.npmjs.com/package/react-native-calendars
 
-firebase 
 
-Sources: 
-
-  images: 
+images: 
   
   https://www.pngwing.com/en/free-png-ytorr
   http://clipart-library.com/free/calculator-transparent.html
@@ -24,23 +22,29 @@ Sources:
   https://www.pngwing.com/en/free-png-yhimv
   https://www.pngwing.com/en/free-png-mcvri
   
-  food ideas:
+
+food ideas:
   
   https://themodernproper.com/50-best-breakfast-ideas
   
-  health papers:
+
+health papers:
   
   calories algorithm: 
   https://www.verywellfit.com/how-many-calories-do-i-need-each-day-2506873
   
+  
   diabetes: 
   https://www.webmd.com/diabetes/eating-right
+  
   
   kidney: 
   https://www.kidney.org/atoz/content/dietary_hemodialysis
   
+  
   coronary artery: 
   https://www.aafp.org/pubs/afp/issues/2003/0415/p1769.html
+  
   
   congestive heart: 
   https://www.ucsfhealth.org/education/diet-and-congestive-heart-failure#:~:text=Choose%20plenty%20of%20fresh%20fruits,are%20good%20low%2Dsodium%20choices
