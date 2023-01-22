@@ -56,6 +56,7 @@ export default function CalcScreen({navigation, route}) {
           AMR = BMR * 1.9
         }
         console.log(AMR);
+        AMR = Math.round(AMR)
         setcal(AMR)
         setModalVisible(!modalVisible);
         return AMR;
@@ -226,7 +227,7 @@ const styles = StyleSheet.create({
     top: 0,
   },
   maletext:{
-    color: colors['color-red'],
+    color: 'black',
     fontSize: 18,
   },
   malewrap: {
@@ -239,7 +240,7 @@ const styles = StyleSheet.create({
     left: 50,
   },
   femaletext:{
-    color: colors['color-red'],
+    color: 'black',
     fontSize: 18,
   },
   femalewrap: {
@@ -263,7 +264,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-evenly",
-    top: 100,
+    top: 80,
     borderTopColor: "black",
     borderTopWidth: 1,
   },
@@ -322,7 +323,7 @@ const styles = StyleSheet.create({
     top: -30,
   },
   activitytext:{
-    color: colors['color-red'],
+    color: 'black',
     fontSize: 12,
   },
   minimalwrap: {

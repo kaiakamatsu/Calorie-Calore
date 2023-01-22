@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-evenly",
-    top: 230,
+    top: 210,
     borderTopColor: "black",
     borderTopWidth: 1,
   },

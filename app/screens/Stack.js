@@ -7,7 +7,7 @@ import HomeScreen from '../screens/HomeScreen';
 import SettingsScreen from './SettingsScreen';
 import HealthyScreen from './HealthScreen';
 import CalcScreen from './CalcScreen';
-import CameraScreen from './CameraScreen';
+import PlanScreen from './PlanScreen';
 
 const Stack = createNativeStackNavigator();
 
@@ -51,8 +51,8 @@ export default function MyStack() {
           options={{ headerShown: false }}
         />
         <Stack.Screen 
-          name="Camera"
-          component={CameraScreen} 
+          name="Plan"
+          component={PlanScreen} 
           options={{ headerShown: false }}
         />
       </Stack.Navigator>
